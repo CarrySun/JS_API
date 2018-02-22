@@ -56,7 +56,7 @@
 `.random();`返回介于 0 ~ 1 之间的一个随机数（parseInt(Math.random()\*(max-min+1)+min);）  
 `.round();`把一个数字舍入为最接近的整数
 `.toFixed();`保留 x 为小数  
-`.toString();`把一个 Number 对象转换为一个字符串，并返回结果
+`.toString("进制");`把一个 Number 对象转换为一个字符串，并返回结果
 
 > Date
 
