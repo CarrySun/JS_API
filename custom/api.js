@@ -113,3 +113,17 @@ function sortObj(property) {
     return value2 - value1; //降序
   };
 }
+/**
+ * 判断两个日期相差天数
+ */
+function compare(start, end) {
+  start = new Date(start);
+  end = new Date(end);
+  startDay = (start.getTime() + 8 * 3600 * 1000) / (3600 * 24 * 1000);
+  endDay = (end.getTime() + 8 * 3600 * 1000) / (3600 * 24 * 1000);
+  startDay = Math.ceil(startDay);
+  endDay = Math.ceil(endDay);
+  var day = Math.abs(startDay - endDay);
+  console.log(day);
+  return day;
+}
